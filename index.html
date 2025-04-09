@@ -1,1 +1,304 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Project page for 'Probing and Inducing Combinational Creativity in Vision-Language Models'.">
+    <meta property="og:title" content="Probing and Inducing Combinational Creativity in Vision-Language Models"/>
+    <meta property="og:description" content="The ability to combine existing concepts into novel ideas stands as a fundamental hallmark of human intelligence. Recent advances in Vision-Language Models (VLMs) like GPT-4V and DALLE-3 have sparked debate about whether their outputs reflect combinational creativity---defined by M. A. Boden (1998) as synthesizing novel ideas through combining existing concepts---or sophisticated pattern matching of training data. Drawing inspiration from cognitive science, we investigate the combinational creativity of VLMs from the lens of concept blending. We propose the Identification-Explanation-Implication (IEI) framework, which decomposes creative processes into three levels: identifying input spaces, extracting shared attributes, and deriving novel semantic implications. To validate this framework, we curate CreativeMashup, a high-quality dataset of 666 artist-generated visual mashups annotated according to the IEI framework. Through extensive experiments, we demonstrate that in comprehension tasks, best VLMs have surpassed average human performance while falling short of expert-level understanding; in generation tasks, incorporating our IEI framework into the generation pipeline significantly enhances the creative quality of VLMs outputs. Our findings establish both a theoretical foundation for evaluating artificial creativity and practical guidelines for improving creative generation in VLMs."/>
+    <meta property="og:url" content="https://ppyyqq.github.io/aicc/"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/images/banner_image.jpg" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="Probing and Inducing Combinational Creativity in Vision-Language Models">
+    <meta name="twitter:description" content="The ability to combine existing concepts into novel ideas stands as a fundamental hallmark of human intelligence. Recent advances in Vision-Language Models (VLMs) like GPT-4V and DALLE-3 have sparked debate about whether their outputs reflect combinational creativity---defined by M. A. Boden (1998) as synthesizing novel ideas through combining existing concepts---or sophisticated pattern matching of training data. Drawing inspiration from cognitive science, we investigate the combinational creativity of VLMs from the lens of concept blending. We propose the Identification-Explanation-Implication (IEI) framework, which decomposes creative processes into three levels: identifying input spaces, extracting shared attributes, and deriving novel semantic implications. To validate this framework, we curate CreativeMashup, a high-quality dataset of 666 artist-generated visual mashups annotated according to the IEI framework. Through extensive experiments, we demonstrate that in comprehension tasks, best VLMs have surpassed average human performance while falling short of expert-level understanding; in generation tasks, incorporating our IEI framework into the generation pipeline significantly enhances the creative quality of VLMs outputs. Our findings establish both a theoretical foundation for evaluating artificial creativity and practical guidelines for improving creative generation in VLMs.">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/twitter_banner_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Creativity, Compositionality, Vision-Language Models">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Probing and Inducing Combinational Creativity in Vision-Language Models</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/video-gallery.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/image-gallery.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/d383128d10.js" crossorigin="anonymous"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/video-gallery.js"></script>
+    <script src="static/js/grid.js"></script>
+    <script src="static/js/image-gallery.js"></script>
+
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Probing and Inducing Combinational Creativity in Vision-Language Models</h1>
+                    <div class="is-size-5 publication-authors" style="margin-bottom: 1rem;">
+                        <style>
+                            .author-container {
+                                display: grid;
+                                grid-template-columns: repeat(4, max-content); /* 控制列数，可改成你想要的数量 */
+                                gap: 0em 1.8em; /* 行间距和列间距 */
+                                line-height: 1.7em;
+                                align-items: center;
+                                justify-content: center; /* 添加这行来居中整个grid */
+                            }
+                        
+                            .author-block {
+                                white-space: nowrap;
+                            }
+                        </style>
+                        
+                        <div style="font-size: 17px;" class="author-container">
+                            <span class="author(coming soon)-block">
+                                <a href="https://ppyyqq.github.io/" target="_blank">Yongqian Peng</a><sup>1*</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="http://mayuxi.com/" target="_blank">Yuxi Ma</a><sup>1*</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?hl=en&user=BSkCvIgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Mengmeng Wang</a><sup>2</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://patrick-tssn.github.io/" target="_blank">Yuxuan Wang</a><sup>2</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm" target="_blank">Yizhou Wang</a><sup>1</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="http://wellyzhang.github.io/" target="_blank">Chi Zhang</a><sup>2</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="http://yzhu.io/" target="_blank">Yixin Zhu</a><sup>1✉️</sup>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://zilongzheng.github.io/" target="_blank">Zilong Zheng</a><sup>2✉️</sup>
+                            </span>
+                        </div>
+
+                        <div style="font-size: 14px;" class="publication-authors">
+                            <!-- <sup>1</sup>Institute for AI, Peking University &nbsp&nbsp  -->
+                            <sup>1</sup>Peking University &nbsp&nbsp 
+                            <sup>2</sup>National Key Lab of General AI &nbsp&nbsp 
+                            <br>
+                            <!-- <sup>3</sup>School of Computer Science, CFCS, Peking University -->
+                            <!-- <br> -->
+                            <sup>*</sup> Equal Contribution &nbsp <sup>✉️</sup> Corresponding Author
+                            <br>
+                            <sup>*</sup>Contributed Equally &nbsp
+                        </div>
+
+                    </div>  
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+                            <span class="link-block">
+                                <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    <span>Paper (coming soon)</span>
+                                </a>
+                            </span>
+            
+                            <!-- ArXiv Abstract Link -->
+                            <!-- <span class="link-block">
+                                <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                                    <span>arXiv (coming soon)</span>
+                                </a>
+                            </span> -->
+            
+                            <!-- Code link -->
+                            <span class="link-block">
+                                <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon"><i class="fab fa-github"></i></span>
+                                    <span>Code (coming soon)</span>
+                                </a>
+                            </span>
+            
+                            <!-- Data link -->
+                            <span class="link-block">
+                                <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon"><i class="fa-solid fa-download"></i></span>
+                                    <span>Data (coming soon)</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- teaser -->
+<section class="hero teaser">
+    <div class="hero-body">
+        <div class="container">
+            <figure class="image" style="margin-bottom: 0;">
+                <img src="static/images/teaser.jpg" alt="Research Poster">
+                <figcaption class="mt-3">
+                    
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<!--End teaser -->
+
+
+<!-- image gallery -->
+
+
+<section class="section">
+    <h2 class="title is-2" style="margin-bottom: 0;">Generated Combinational Creative Mashups</h2>
+    <h3 class="video-caption">IEI's Resuts versus II's Results</h3>
+    <div class="container">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="static/images/image_gallery_01.png" alt="Image 1">
+                <img src="static/images/image_gallery_02.png" alt="Image 2">
+                <img src="static/images/image_gallery_03.png" alt="Image 3">
+                <img src="static/images/image_gallery_04.png" alt="Image 4">
+                <img src="static/images/image_gallery_05.png" alt="Image 5">
+                <img src="static/images/image_gallery_06.png" alt="Image 6">
+                <img src="static/images/image_gallery_07.png" alt="Image 7">
+                <img src="static/images/image_gallery_08.png" alt="Image 8">
+                <img src="static/images/image_gallery_09.png" alt="Image 9">
+                <img src="static/images/image_gallery_10.png" alt="Image 10">
+                <img src="static/images/image_gallery_11.png" alt="Image 11">
+                <img src="static/images/image_gallery_12.png" alt="Image 12">
+
+            </div>
+
+            <button class="carousel-arrow left">&#10094;</button>
+            <button class="carousel-arrow right">&#10095;</button>
+
+        </div>
+        <figure class="image" style="margin-bottom: 0;">
+            <img src="" alt="">
+            <figcaption class="mt-3">
+                These figures show qualitative results for generation. The first rows represent the results in the <strong><em>IEI</em></strong> setting. The second rows represent the results in the <strong><em>II</em></strong> setting. Each column represents results of a text-to-image model (i.e., Midjourney, Flux-1.1-pro, DALLE-3, Flux-1.0-dev, Stable-diffusion-3-medium). These results show that the <strong><em>IEI</em></strong> method can work across different themes and various concepts and enhance the quality of combination compared to the <strong><em>II</em></strong> setting.
+        </figure>
+    </div>
+    
+</section>
+
+<!--End image gallery -->
+
+
+
+<!-- Paper abstract -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-2" style="margin-bottom: 0.5rem;">Abstract</h2>
+            <figure class="image" style="margin-bottom: 0rem;">
+                <figcaption style="margin-top: 0rem;">
+                    The ability to combine existing concepts into novel ideas stands as a fundamental hallmark of human intelligence. Recent advances in Vision-Language Models (VLMs) like GPT-4V and DALLE-3 have sparked debate about whether their outputs reflect combinational creativity--defined by M. A. Boden (1998) as synthesizing novel ideas through combining existing concepts--or sophisticated pattern matching of training data. Drawing inspiration from cognitive science, we investigate the combinational creativity of VLMs from the lens of concept blending. We propose the <strong>Identification-Explanation-Implication (IEI) framework</strong>, which decomposes creative processes into three levels: identifying input spaces, extracting shared attributes, and deriving novel semantic implications. To validate this framework, we curate CreativeMashup, a high-quality <strong>dataset</strong> of 666 artist-generated visual mashups annotated according to the IEI framework. Through extensive experiments, we demonstrate that in <strong>comprehension</strong> tasks, best VLMs have surpassed average human performance while falling short of expert-level understanding; in <strong>generation</strong> tasks, incorporating our IEI framework into the generation pipeline significantly enhances the creative quality of VLMs outputs. Our findings establish both a theoretical foundation for evaluating artificial creativity and practical guidelines for improving creative generation in VLMs.
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method -->
+<section class="hero is-small">
+  <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-2" style="margin-bottom: 1rem;">Paper Overview</h2>
+            <figure class="image" style="margin-bottom: 0;">
+                <img src="static/images/method.jpg" alt="Research Poster">
+                <figcaption class="mt-3">
+                    The IEI framework systematically evaluates combinational creativity in comprehension and generation tasks. For comprehension, each level within the IEI framework represents progressively complex analytical capabilities, offering clear metrics to investigate comprehension capabilities. In generation tasks, the IEI framework guides the creative process systematically, facilitating more sophisticated and meaningful outputs compared to standard chain-of-thought approaches. This structured decomposition supports the design of experiments that explicitly integrate systematic creative thinking, enhancing VLMs' capacity for contextually relevant creation.
+                </figcaption>
+            </figure>
+        </div>
+  </div>
+</section>
+<!--End method -->
+
+
+<!-- Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+          <div class="container">
+              <h2 class="title is-2" style="margin-bottom: 1rem;">Task Setup</h2>
+              <figure class="image" style="margin-bottom: 0;">
+                  <img src="static/images/task.jpg" alt="Research Poster">
+                  <figcaption class="mt-3">
+                    Coming Soon
+                  </figcaption>
+              </figure>
+          </div>
+    </div>
+  </section>
+  <!--End method -->
+
+
+<!--BibTex citation -->
+ <!-- <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-2" style="margin-bottom: 1rem;">BibTex</h2>
+            <figure class="image" style="margin-bottom: 0;">
+                <pre><code>@article{li2024zerohsi,
+  title={Probing and Inducing Combinational Creativity in Vision-Language Models},
+  author={Li, Hongjie and Yu, Hong-Xing and Li, Jiaman and Wu, Jiajun},
+  journal={arXiv preprint arXiv:2412.18600},
+  year={2024}
+}</code></pre>
+            </figure>
+        </div>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content has-text-centered">
+                    <p>
+                        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                        <br>
+                        This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
