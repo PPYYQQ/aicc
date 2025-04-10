@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         intervalId = setInterval(() => {
             currentIndex = (currentIndex + 1) % slides.length;
             updateCarousel();
-        }, 8000);
+        }, 3000);
     }
 
     function stopAutoPlay() {
