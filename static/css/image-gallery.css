@@ -43,8 +43,7 @@
     opacity: 1;
 }
 
-
-.section .carousel-dots {
+.hero .carousel-dots {
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -56,7 +55,7 @@
     z-index: 1;
 }
 
-.section .carousel-dots button {
+.hero .carousel-dots button {
     width: 12px;
     height: 12px;
     border-radius: 50%;

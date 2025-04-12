@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const carouselContainer = document.querySelector(".section .carousel-container");
-    const slideContainer = document.querySelector(".section .carousel-slide");
-    const slides = document.querySelectorAll(".section .carousel-slide img");
-    const prevBtn = document.querySelector(".section .carousel-arrow.left");
-    const nextBtn = document.querySelector(".section .carousel-arrow.right");
+    const carouselContainer = document.querySelector(".hero .carousel-container");
+    const slideContainer = document.querySelector(".hero .carousel-slide");
+    const slides = document.querySelectorAll(".hero .carousel-slide img");
+    const prevBtn = document.querySelector(".hero .carousel-arrow.left");
+    const nextBtn = document.querySelector(".hero .carousel-arrow.right");
     
 
     const dotsContainer = document.createElement("div");
