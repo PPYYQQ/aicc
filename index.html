@@ -191,7 +191,16 @@
                 <figure class="image" style="margin-bottom: 0;">
                     <img src="" alt="">
                     <figcaption class="mt-3">
-                        These figures show qualitative results for generation. The first rows represent the results in the <strong><em>IEI</em></strong> setting. The second rows represent the results in the <strong><em>II</em></strong> setting. Each column represents results of a text-to-image model (i.e., Midjourney, Flux-1.1-pro, DALLE-3, Flux-1.0-dev, Stable-diffusion-3-medium). These results show that the <strong><em>IEI</em></strong> method can work across different themes and various concepts and enhance the quality of combination compared to the <strong><em>II</em></strong> setting.
+                        <ul>
+                            <li><strong>II (Identification + Implication)</strong>:
+                                The model receives the input objects and the theme. It attempts to merge the objects in a way that aligns with the theme, using a chain-of-thought approach, but without any additional prompts or instructions.
+                            </li>
+                            <li><strong>IEI (Identification + Explanation + Implication)</strong>:
+                                In addition to being given the input objects and theme, the models are prompted to reflect on the commonalities in several aspects among the input objects.
+                            </li>
+                        </ul>
+                        <br>
+                        These results show that the <strong><em>IEI</em></strong> method can work across different themes and various concepts and enhance the quality of combination compared to the <strong><em>II</em></strong> setting.
                 </figure>
             </div>
         </div>
