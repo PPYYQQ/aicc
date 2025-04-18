@@ -200,12 +200,13 @@
                     <img src="" alt="">
                     <figcaption class="mt-3">
                         <ul>
-                            <li><strong>II (Identification + Implication)</strong>:
-                                The model receives the input objects and the theme. It attempts to merge the objects in a way that aligns with the theme, using a chain-of-thought approach, but without any additional prompts or instructions.
+                            <li><strong>IEI (Identification + Explanation + Implication)</strong>:  
+                                In the IEI setup, the model receives the input objects and the theme, and is then prompted to analyze their shared characteristics from various perspectives before generating the prompts for text-to-image models.
+                            </li> 
+                            <li><strong>II (Identification + Implication)</strong>:  
+                                In the II setup, the model is given the same inputs (i.e., objects, theme) and uses the chain-of-thought method but is not explicitly guided to explore the shared attributes between the objects.
                             </li>
-                            <li><strong>IEI (Identification + Explanation + Implication)</strong>:
-                                In addition to being given the input objects and theme, the models are prompted to reflect on the commonalities in several aspects among the input objects.
-                            </li>
+                                
                         </ul>
                         <br>
                         These results show that the <strong><em>IEI</em></strong> method can work across different themes and various concepts and enhance the quality of combination compared to the <strong><em>II</em></strong> setting.
@@ -237,6 +238,7 @@
             <br>
             <h3 class="video-caption">Object Driven Generation</h3>
             <div class="container">
+                <h4 class="video-caption">Novel conceptual mashups starting from "horse"</h4>
                 <div class="carousel-container">
                     <div class="carousel-slide">
                         <img src="static/images/horse_1.png" alt="Image 1" loading="lazy">
@@ -250,20 +252,16 @@
                 </div>
                 <figure class="image" style="margin-bottom: 0;">
                     <img src="" alt="">
-                    <figcaption class="mt-3">
-                        The mode is given an object. (To be finished..)
-                    </figcaption>
                 </figure>
             </div>
             
-            <br>
-            <h3 class="video-caption">Object Driven Generation</h3>
             <div class="container">
+                <h4 class="video-caption">novel mashups for product designs</h4>
                 <div class="carousel-container">
                     <div class="carousel-slide">
                         <img src="static/images/product_1.png" alt="Image 1" loading="lazy">
                         <img src="static/images/product_2.png" alt="Image 2" loading="lazy">
-                        <img src="static/images/product_3.png" alt="Image 3" loading="lazy">
+                        <img src="static/images/product_3.png" alt="I mage 3" loading="lazy">
                         <img src="static/images/product_4.png" alt="Image 4" loading="lazy">
                     </div>
 
@@ -273,7 +271,7 @@
                 <figure class="image" style="margin-bottom: 0;">
                     <img src="" alt="">
                     <figcaption class="mt-3">
-                        The mode is given an object. (To be finished..)
+                        Starting from an initial object (e.g., a horse), we prompt a language model to generate conceptually related items by identifying common attributes across a generalized feature space (e.g., color, function). These outputs are structured as triplets—(object1, object2, shared attributes)—which are then fed into the IEI pipeline to produce creative combinations: novel conceptual mashups (shown above) and product designs (shown below).
                     </figcaption>
                 </figure>
             </div>
